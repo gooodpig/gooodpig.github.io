@@ -5,10 +5,10 @@
   
   <entry>
     <title>【持续更新】乖猪的原创题!</title>
-    <link href="/read/cmarr5uul0002vcacg7sm0ljf.html"/>
-    <url>/read/cmarr5uul0002vcacg7sm0ljf.html</url>
+    <link href="/read/cmarrgm9k000250acg1d0hbd4.html"/>
+    <url>/read/cmarrgm9k000250acg1d0hbd4.html</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h2 id="立体几何">立体几何</h2><p>如图,正三棱锥 $ P-ABC $ 满足 $ PA = PB = PC $ ,$ AB=BC=CA $.球 $ O $分别与棱 $ PA <span class="math inline">、</span> PB <spanclass="math inline">、</span> PC $ 相切于点 $ A <spanclass="math inline">、</span> B <span class="math inline">、</span> C$.球 $ O_1 $ 是过点 $ A <span class="math inline">、</span> B <spanclass="math inline">、</span> C $ 的另外一个球.点 $ Q $ 是球 $ O $上的动点,线段 $ QA <span class="math inline">、</span> QB <spanclass="math inline">、</span> QC $ 分别与球 $ O_1 $ 交于点 $ A_1 <spanclass="math inline">、</span> B_1 <span class="math inline">、</span>C_1 $.</p><p>证明:直线<spanclass="math inline"><em>P</em><em>Q</em></span>经过<spanclass="math inline">△<em>A</em><sub>1</sub><em>B</em><sub>1</sub><em>C</em><sub>1</sub></span>的外心.</p><figure><img src="/img/原创题/1.png" alt="题1图" /><figcaption aria-hidden="true">题1图</figcaption></figure>]]></content>
     
     
     
@@ -24,8 +24,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/read/cmarr5uuh0001vcac4g9ca18k.html"/>
-    <url>/read/cmarr5uuh0001vcac4g9ca18k.html</url>
+    <link href="/read/cmarrgm9g000150acccqnayuh.html"/>
+    <url>/read/cmarrgm9g000150acccqnayuh.html</url>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
