@@ -22,7 +22,7 @@
     <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://gooodpig.pages.dev/read/cmarrgm9g000150acccqnayuh.html">
+<meta property="og:url" content="https://gooodpig.pages.dev/read/cmat5hn3q0003g8ac67vt5a0e.html">
 <meta property="og:site_name" content="GooodPig">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="zh_CN">
@@ -44,8 +44,6 @@
   <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
 
 
 
@@ -308,7 +306,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>Hello World</div>
-      <div>https://gooodpig.pages.dev/read/cmarrgm9g000150acccqnayuh.html</div>
+      <div>https://gooodpig.pages.dev/read/cmat5hn3q0003g8ac67vt5a0e.html</div>
     </div>
     <div class="license-meta">
       
@@ -352,7 +350,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/read/cmarrgm9k000250acg1d0hbd4.html" title="【持续更新】乖猪的原创题!">
+                      <a href="/read/cmat5hn3k0000g8achr694fx3.html" title="【持续更新】乖猪的原创题!">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">【持续更新】乖猪的原创题!</span>
                         <span class="visible-mobile">上一篇</span>
@@ -418,6 +416,7 @@
 
   
   
+
 
 
 
@@ -611,6 +610,49 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
