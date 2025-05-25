@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>直面心魔——广东预赛二试回顾(其一)</title>
+    <link href="/year/05/25/%E7%9B%B4%E9%9D%A2%E5%BF%83%E9%AD%94%E2%80%94%E2%80%94%E5%B9%BF%E4%B8%9C%E9%A2%84%E8%B5%9B%E4%BA%8C%E8%AF%95%E5%9B%9E%E9%A1%BE1/"/>
+    <url>/year/05/25/%E7%9B%B4%E9%9D%A2%E5%BF%83%E9%AD%94%E2%80%94%E2%80%94%E5%B9%BF%E4%B8%9C%E9%A2%84%E8%B5%9B%E4%BA%8C%E8%AF%95%E5%9B%9E%E9%A1%BE1/</url>
+    
+    <content type="html"><![CDATA[<p>$2025$广东预赛已经告一段落,但是糖丸的二试还是令我念念不忘,故在此直面心魔.</p><p>先看代数题.</p><h2 id="题目">题目</h2><p>已知非负实数$x_1,x_2,\cdots,x_n$满足:$\displaystyle \sum_i^5x_i^2=4$.设$$S=\sum_i^5\frac1{1+x_i}\sum_i^5x_i.$$求$S$的最大值.</p><h2 id="分析">分析</h2><ol><li>猜取等</li></ol><table><thead><tr><th>$x_i$</th><th>$S$</th></tr></thead><tbody><tr><td>全取$\displaystyle \frac{2\sqrt5}{5}$</td><td>$\displaystyle 50(\sqrt5-2)$</td></tr><tr><td>$1,1,1,1,0$</td><td>$12$</td></tr><tr><td>$2,0,0,0,0$</td><td>$\displaystyle \frac{26}3$</td></tr></tbody></table><p>猜测是$1,1,1,1,0$.</p><ol start="2"><li>凑取等</li></ol><p>因为想要在$0,1$处都取等,我们选用$\begin{equation}x\left(x-1\right)^2\geqslant0\end{equation}$进行放缩.对$(1)$进行恒等变形得到$\begin{equation}\frac14x^2-\frac34x+1\geqslant\frac1{1+x}.\end{equation}$这正是我们想要的.</p><h2 id="解答">解答</h2><p>由$x\geqslant0$,得$$x\left(x-1\right)^2\geqslant0 \Leftrightarrow  \frac14x^2-\frac34x+1\geqslant\frac1{1+x}.$$求和得到$$\begin{align*}S&amp;=\sum_i^5\frac1{1+x_i}\sum_i^5x_i\\&amp;\leqslant\sum_i^5\left(\frac14x^2-\frac34x+1\right)\sum_i^5x_i\\&amp;=\frac34\left(8-\sum_i^5x_i\right)\sum_i^5x_i\\&amp;\leqslant\frac34\left(\frac82\right)^2=12.\end{align*}$$等号成立当且仅当$x_i$取$4$个$1$,$1$个$0$.$\square$</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>数学,竞赛</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>【持续更新】乖猪的原创题!</title>
     <link href="/year/05/16/%E4%B9%96%E7%8C%AA%E7%9A%84%E5%8E%9F%E5%88%9B%E9%A2%98/"/>
     <url>/year/05/16/%E4%B9%96%E7%8C%AA%E7%9A%84%E5%8E%9F%E5%88%9B%E9%A2%98/</url>
