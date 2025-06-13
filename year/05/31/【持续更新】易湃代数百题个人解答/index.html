@@ -26,13 +26,15 @@
 <meta property="og:site_name" content="GooodPig">
 <meta property="og:description" content="第1题.              题目 \(a_1,\cdots,a_{100}:a_i+a_{i+1}+a_{i+2}\leqslant1\),下标按\(\mathrm{mod}\100\)理解.求\[\sum_{i&#x3D;1}^{100}a_ia_{i+2}\]的最大值.                         分析 猜取等:注意到取\(\displaystyle\frac12">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gooodpig.pages.dev/img/epai11.png">
 <meta property="article:published_time" content="2025-05-31T04:59:41.000Z">
-<meta property="article:modified_time" content="2025-06-08T11:16:10.260Z">
+<meta property="article:modified_time" content="2025-06-09T01:41:47.264Z">
 <meta property="article:author" content="GooodPig">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="竞赛">
 <meta property="article:tag" content="代数">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://gooodpig.pages.dev/img/epai11.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -239,7 +241,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          979 字
+          1.8k 字
         
       </span>
     
@@ -250,7 +252,7 @@
         
         
         
-          9 分钟
+          15 分钟
         
       </span>
     
@@ -330,7 +332,7 @@
             <p><strong>分析</strong> 猜取等时,<spanclass="math inline">\(RHS\)</span>中间应该有大片<spanclass="math inline">\(0\)</span>.所以我们可以待定<spanclass="math inline">\(\lambda_i\in[0,1]\)</span>,有</p><p><spanclass="math display">\[RHS\geqslant\sum_{i=0}^{n-2}\lambda_i\mida_i-ka_{i+1}-a_{i+2}\mid\geqslant\mid\sum_{i=0}^{n-2}\lambda_i(a_i-ka_{i+1}-a_{i+2})\mid.\]</span></p><p>并且我们希望消去<spanclass="math inline">\(a_2,\cdots,a_{n-2}\)</span>.<spanclass="math display">\[\Leftrightarrow-\lambda_i-k\lambda_{i+2}+\lambda_{i+2}=0.\]</span> 考虑特征根<spanclass="math inline">\(x^2-kx-1=0\)</span>的两根<spanclass="math inline">\(x_{1,2}\)</span>,为了方便构造直接取<spanclass="math inline">\(\lambda_i=x_1^i\)</span>.</p>
           </div>
 <div class="note note-success">
-            <p><strong>解答</strong> 设<spanclass="math inline">\(x^2-kx-1=0\)</span>的两根是<spanclass="math inline">\(x_1,x_2\)</span>,因为<spanclass="math inline">\(x_1x_2=-1\)</span>,不妨<spanclass="math inline">\(\mid x_1\mid\leqslant1\)</span>.所以</p><p><spanclass="math display">\[\begin{align*}RHS&amp;\geqslant\sum_{i=0}^{n-2}\lambda_i\mida_i-ka_{i+1}-a_{i+2}\mid\geqslant\mid\sum_{i=0}^{n-2}\lambda_i(a_i-ka_{i+1}-a_{i+2})\mid\\\\&amp;=\mid\sum_{i=0}^{n-2}x_1^i(a_i-ka_{i+1}-a_{i+2})\mid\\\\&amp;=\mida_0-x_1^{n-2}a_n\mid\geqslant\mid a_0\mid-x_1^{n-2}\mida_{n}\mid\geqslant\mid a_0\mid-\mida_{n}\mid.\square\end{align*}\]</span></p>
+            <p><strong>解答</strong> 设<spanclass="math inline">\(x^2-kx-1=0\)</span>的两根是<spanclass="math inline">\(x_1,x_2\)</span>,因为<spanclass="math inline">\(x_1x_2=-1\)</span>,不妨<spanclass="math inline">\(\mid x_1\mid\leqslant1\)</span>.所以</p><p><spanclass="math display">\[\begin{align*}RHS&amp;\geqslant\sum_{i=0}^{n-2}\lambda_i\mida_i-ka_{i+1}-a_{i+2}\mid\geqslant\mid\sum_{i=0}^{n-2}\lambda_i(a_i-ka_{i+1}-a_{i+2})\mid\\\\&amp;=\mid\sum_{i=0}^{n-2}x_1^i(a_i-ka_{i+1}-a_{i+2})\mid\\\\&amp;=\mida_0-x_1^{n-2}a_n\mid\geqslant\mid a_0\mid-x_1^{n-2}\mida_{n}\mid\geqslant\mid a_0\mid-\mida_{n}\mid.\square\end{align*}\]</span></p><p><strong>注</strong> 优雅而美好!</p>
           </div>
 <h2 id="第5题.">第5题.</h2>
 <div class="note note-info">
@@ -350,7 +352,27 @@
             <p><strong>分析</strong> 先来考察小情况.</p>
           </div>
 <div class="note note-success">
-            <p><strong>解答</strong> 首先证明:<spanclass="math display">\[x^3y^3+y^3z^3\leqslant\frac18(x^2+y^2+z^2)^3.\]</span><spanclass="math display">\[\sum_{\mathrm{cyc}}x^6+3x^2y^2z^2+3\sum_{\mathrm{cyc}}(x^4y^2+x^2y^4)-8x^3y^3-8y^3z^3\geqslant0.\]</span>由<span class="math inline">\(\mathrm{Schur}\)</span>,<spanclass="math display">\[LHS\geqslant4((x^2y-xy^2)^2+(y^2z-yz^2)^2+(x^4z^2+x^2z^4)^2)\geqslant0.\]</span></p><p>所以<spanclass="math display">\[\text{原式}\leqslant\frac18((x_1^2+x_2^2+x_3^2)^3+\cdots+(x_{2020}^2+x_{2021}^2)^3)\leqslant\frac18.\]</span>等号成立当连续<spanclass="math inline">\(2\)</span>项<spanclass="math inline">\(\frac{\sqrt2}2\)</span>.</p>
+            <p><strong>解答</strong> 首先证明:<spanclass="math display">\[x^3y^3+y^3z^3\leqslant\frac18(x^2+y^2+z^2)^3.\]</span><spanclass="math display">\[\Leftrightarrow\sum_{\mathrm{cyc}}x^6+3x^2y^2z^2+3\sum_{\mathrm{cyc}}(x^4y^2+x^2y^4)-8x^3y^3-8y^3z^3\geqslant0.\]</span>由<span class="math inline">\(\mathrm{Schur}\)</span>,<spanclass="math display">\[LHS\geqslant4((x^2y-xy^2)^2+(y^2z-yz^2)^2+(x^4z^2+x^2z^4)^2)\geqslant0.\]</span></p><p>所以<spanclass="math display">\[\text{原式}\leqslant\frac18((x_1^2+x_2^2+x_3^2)^3+\cdots+(x_{2020}^2+x_{2021}^2)^3)\leqslant\frac18.\]</span>等号成立当连续<spanclass="math inline">\(2\)</span>项<spanclass="math inline">\(\frac{\sqrt2}2\)</span>.</p><p><strong>注</strong> 这个解答相当不优雅.</p>
+          </div>
+<h2 id="第7题.">第7题.</h2>
+<div class="note note-info">
+            <p><strong>题目</strong> 整数<spanclass="math inline">\(n\geqslant2\)</span>_,非负实数<spanclass="math inline">\(a_1,\cdots,a_n:\)</span> <spanclass="math display">\[\sum_{i=1}^na_i=4.\]</span>求<spanclass="math display">\[2a_1+a_1a_2+a_1a_2a_3+\cdots+a_1a_2\cdotsa_n\]</span>的最大值.</p>
+          </div>
+<div class="note note-primary">
+            <p><strong>分析</strong> 先来考察小情况.</p>
+          </div>
+<div class="note note-success">
+            <p><strong>解答</strong> 我们对<spanclass="math inline">\(n\)</span>归纳证明:<spanclass="math inline">\(2a_1+a_1a_2+a_1a_2a_3+\cdots+a_1a_2\cdotsa_n\)</span>的最大值为<spanclass="math inline">\(9\)</span>,等号成立仅当<spanclass="math inline">\(a_1=3,a_2=1\)</span>.</p><p><strong>归纳奠基</strong> <spanclass="math inline">\(n=2\)</span>时,<spanclass="math display">\[2a_1+a_1a_2=a_1(2+a_2)\leqslant\frac14(2+a_1+a_2)^2=9.\]</span></p><p><strong>归纳假设</strong> 若对<spanclass="math inline">\(n-1\)</span>成立,考虑<spanclass="math inline">\(n\)</span>的情形.</p><p><strong>情形<span class="math inline">\(1\)</span>.</strong>如果<span class="math inline">\(a_{n-1}\leqslant1\)</span>,有<spanclass="math display">\[a_1a_2\cdots a_{n-2}a_{n-1}+a_1a_2\cdotsa_{n-2}a_{n-1}a_n\leqslant a_1a_2\cdotsa_{n-2}(a_{n-1}+a_n).\]</span></p><p>又<spanclass="math inline">\(a_1+\cdots+a_{n-2}+(a_{n-1}+a_n)=4\)</span>,由归纳假设,<spanclass="math inline">\(2a_1+a_1a_2+a_1a_2a_3+\cdots+a_1a_2\cdotsa_n\leqslant9\)</span>.等号成立仅当<spanclass="math inline">\(a_1=3,a_2=1\)</span>.</p><p><strong>情形<span class="math inline">\(2\)</span>.</strong>如果<span class="math inline">\(a_{n-1}&gt;1\)</span>,有<spanclass="math display">\[\begin{cases}a_1+a_2&lt;3,\\a_1+a_2+a_3&lt;3,\\\vdots\\a_1+\cdots+a_{n-2}&lt;3,\\a_1+\cdots+a_{n-1}\leqslant4,\\a_1+\cdots+a_n=4.\end{cases}\]</span>所以,<spanclass="math display">\[\text{原式}&lt;\frac{25}4+\left(\frac33\right)^3+\left(\frac34\right)^4+\cdots+\left(\frac3{n-2}\right)^{n-2}+\left(\frac4{n-1}\right)^{n-1}+\left(\frac4n\right)^n.\]</span>当<spanclass="math inline">\(n\geqslant6\)</span>,<spanclass="math display">\[\begin{align*}\text{原式}&amp;&lt;\frac{25}4+\left(\frac34\right)^4+\left(\frac34\right)^5+\cdots+\left(\frac34\right)^{n-2}+\left(\frac4{n-1}\right)^{n-1}+\left(\frac4n\right)^n\\&amp;&lt;\frac{545}{64}+\left(\frac4{n-1}\right)^{n-1}+\left(\frac4n\right)^n\leqslant\frac{545}{64}+\left(\frac45\right)^5+\left(\frac23\right)^6&lt;9.\end{align*}\]</span>当<spanclass="math inline">\(n&lt;6\)</span>, <spanclass="math display">\[\text{原式}&lt;\frac{25}4+1+\left(\frac44\right)^4+\left(\frac45\right)^5&lt;9.\]</span></p><p>于是<spanclass="math inline">\(\text{原式}\leqslant9\)</span>,归纳证毕.<spanclass="math inline">\(\square\)</span></p><p><strong>注</strong> 这个解答相当不优雅.</p>
+          </div>
+<h2 id="第11题.">第11题.</h2>
+<div class="note note-info">
+            <p><strong>题目</strong> 给定正整数<spanclass="math inline">\(n&gt;1\)</span>,求最小实数<spanclass="math inline">\(c(n):\)</span> <span class="math inline">\(\foralla_1,\cdots a_n\in\mathbb{R}_+\)</span>,<spanclass="math display">\[\frac1n\sum_{i=1}^na_i-\sqrt[n]{\prod_{i=1}^na_i}\leqslantc(n)\max_{i &lt; j}(\sqrt{a_i}-\sqrt{a_j})^2.\]</span></p>
+          </div>
+<div class="note note-primary">
+            <p><strong>分析</strong> 看出来了吗?这题本质是导数大题.</p>
+          </div>
+<div class="note note-success">
+            <p><strong>解答</strong> 一方面,取<spanclass="math inline">\(a_1=1,a_2=a_3=\cdots=a_n\rightarrow+\infty\)</span>,有<spanclass="math display">\[c(n)\geqslant\lim_{x\rightarrow+\infty}\frac{\frac{(n-1)x+1}n-x^{(n-1)/n}}{(\sqrt{x}-1)^2}=\frac{n-1}n.\]</span>下证<spanclass="math display">\[f=\frac1n\sum_{i=1}^na_i-\sqrt[n]{\prod_{i=1}^na_i}\leqslant\frac{n-1}n\max_{i &lt; j}(\sqrt{a_i}-\sqrt{a_j})^2.\]</span> 不妨<spanclass="math inline">\(x\)</span>最小,<spanclass="math inline">\(y\)</span>最大.由<spanclass="math inline">\(f\)</span>关于<spanclass="math inline">\(a_i\)</span>的凸性,<spanclass="math display">\[f(a_i)\leqslant f(x)\text{或}f(y).\]</span>设调整后<span class="math inline">\(a\)</span>个<spanclass="math inline">\(x\)</span>,<spanclass="math inline">\(b\)</span>个<spanclass="math inline">\(y\)</span>.<span class="math inline">\(1\leqslanta\leqslant n-1\)</span>.则<spanclass="math display">\[f=\frac{ax+(n-a)y}n-x^{a/n}y^{(n-a)/n}.\]</span>由<spanclass="math inline">\(f\)</span>关于<spanclass="math inline">\(a\)</span>的凸性,<spanclass="math display">\[f(a)\leqslant f(1)\text{或}f(n-1).\]</span>故只需证<span class="math inline">\(\forall x,y\in \mathbb{R}_+\)</span>(不必<span class="math inline">\(x\leqslant y\)</span>),<spanclass="math display">\[\frac{x+(n-1)y}n-x^{1/n}y^{(n-1)/n}\leqslant\frac{n-1}n(\sqrt{x}-\sqrt{y})^2.\]</span>由齐次性不妨设<span class="math inline">\(y=1\)</span>,<spanclass="math display">\[\Leftrightarrow\forall x\in\mathbb{R}_+,\frac{x+(n-1)}n-x^{1/n}\leqslant\frac{n-1}n(\sqrt{x}-1)^2.\]</span><span class="math display">\[\Leftrightarrowg(\sqrt{x})=(n-2)x+nx^{1/n}-2(n-1)\sqrt{x}\geqslant 0\]</span> <spanclass="math inline">\(\sqrt x=t\)</span>,<spanclass="math display">\[g&#39;(t)=(2n-4)t+2t^{2/n-1}-2(n-1),\]</span><spanclass="math display">\[g&#39;&#39;(t)=2n-4+\left(\frac4n-2\right)t^{2/n-2}.\]</span>令<span class="math inline">\(g&#39;&#39;(t)=0\)</span>,得<spanclass="math inline">\(g&#39;(t)\)</span>在<spanclass="math inline">\([0,n^{n/(2-2n)})\)</span>递减,<spanclass="math inline">\((n^{n/(2-2n)},+\infty)\)</span>递增,<spanclass="math inline">\(g&#39;(t_0)=g&#39;(1)=0\)</span>.则<spanclass="math inline">\(g(t)\)</span>在<spanclass="math inline">\((0,t_0)\)</span>递增,<spanclass="math inline">\((t_0,1)\)</span>递减,<spanclass="math inline">\((1,+\infty)\)</span>递增.又<spanclass="math inline">\(\displaystyle\lim_{t\rightarrow0}g(t)=0\)</span>,<spanclass="math inline">\(g(1)=0\)</span>知<spanclass="math inline">\(g(t)\geqslant0\)</span>,证毕.<spanclass="math inline">\(\square\)</span> <img src="/img/epai11.png" srcset="/img/loading.gif" lazyloadalt="画张草图" /></p><p><strong>注</strong> 这个解答相当相当不优雅.</p>
           </div>
 
                 
