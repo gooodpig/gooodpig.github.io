@@ -19,27 +19,24 @@
   <meta name="author" content="GooodPig">
   <meta name="keywords" content="">
   
-    <meta name="description" content="这个题集主要是把乖猪平时做到的几何缝合起来,变成一个新题. 问题1              题目 如图,设\(\triangleABC\)的内心是\(I\),外接圆\(O\).\(AI\)与\(\odotO\)再次交于\(A_1\),\(A_2\)是\(BC\)中点,\(A_3\)是\(\triangle AA_1A_2\)外心,\(A_4\)是\(IA_1\)中点,\(A_5\)是\(">
+    <meta name="description" content="从Geogebra到Asymptote Geogebra并非仅仅是一套免费的数学工具, 它更是一个平台. 这个平台旨在连接满怀热情的教师与学生, 为他们提供一种崭新的数学探索与学习方式. Geogebra Classic程序自带了转为Asymptote的工具.但是它生成的代码并不易于阅读.为此乖猪从EvanChen的博客找到了一个转换工具,它可以把Geogebra生成的代码格式化.快说:">
 <meta property="og:type" content="article">
-<meta property="og:title" content="乖猪的几何缝合怪题集">
-<meta property="og:url" content="https://gooodpig.pages.dev/year/08/12/%E4%B9%96%E7%8C%AA%E7%9A%84%E5%87%A0%E4%BD%95%E7%BC%9D%E5%90%88%E6%80%AA%E9%A2%98%E9%9B%86/index.html">
+<meta property="og:title" content="【干货】乖猪的Asymptote教程">
+<meta property="og:url" content="https://gooodpig.pages.dev/year/08/16/%E3%80%90%E5%B9%B2%E8%B4%A7%E3%80%91%E4%B9%96%E7%8C%AA%E7%9A%84Asymptote%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="GooodPig">
-<meta property="og:description" content="这个题集主要是把乖猪平时做到的几何缝合起来,变成一个新题. 问题1              题目 如图,设\(\triangleABC\)的内心是\(I\),外接圆\(O\).\(AI\)与\(\odotO\)再次交于\(A_1\),\(A_2\)是\(BC\)中点,\(A_3\)是\(\triangle AA_1A_2\)外心,\(A_4\)是\(IA_1\)中点,\(A_5\)是\(">
+<meta property="og:description" content="从Geogebra到Asymptote Geogebra并非仅仅是一套免费的数学工具, 它更是一个平台. 这个平台旨在连接满怀热情的教师与学生, 为他们提供一种崭新的数学探索与学习方式. Geogebra Classic程序自带了转为Asymptote的工具.但是它生成的代码并不易于阅读.为此乖猪从EvanChen的博客找到了一个转换工具,它可以把Geogebra生成的代码格式化.快说:">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gooodpig.pages.dev/img/fh1.png">
-<meta property="og:image" content="https://gooodpig.pages.dev/img/fh2.png">
-<meta property="article:published_time" content="2025-08-12T04:51:59.000Z">
-<meta property="article:modified_time" content="2025-08-14T04:44:49.931Z">
+<meta property="article:published_time" content="2025-08-16T04:02:53.000Z">
+<meta property="article:modified_time" content="2025-08-16T04:17:35.305Z">
 <meta property="article:author" content="GooodPig">
-<meta property="article:tag" content="数学,竞赛,几何">
+<meta property="article:tag" content="Asymptote,技术,TeX,绘图">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://gooodpig.pages.dev/img/fh1.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>乖猪的几何缝合怪题集 - GooodPig</title>
+  <title>【干货】乖猪的Asymptote教程 - GooodPig</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -217,7 +214,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="乖猪的几何缝合怪题集"></span>
+            <span id="subtitle" data-typed-text="【干货】乖猪的Asymptote教程"></span>
           
         </div>
 
@@ -228,8 +225,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-08-12 12:51" pubdate>
-          2025年8月12日 下午
+        <time datetime="2025-08-16 12:02" pubdate>
+          2025年8月16日 中午
         </time>
       </span>
     
@@ -240,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          285 字
+          380 字
         
       </span>
     
@@ -251,7 +248,7 @@
         
         
         
-          3 分钟
+          4 分钟
         
       </span>
     
@@ -288,29 +285,43 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">乖猪的几何缝合怪题集</h1>
+            <h1 id="seo-header">【干货】乖猪的Asymptote教程</h1>
             
             
               <div class="markdown-body">
                 
-                <p>这个题集主要是把乖猪平时做到的几何<em>缝合</em>起来,变成一个新题.</p>
-<h2 id="问题1">问题1</h2>
-<div class="note note-info">
-            <p><strong>题目</strong> 如图,设<span class="math inline">\(\triangleABC\)</span>的内心是<span class="math inline">\(I\)</span>,外接圆<spanclass="math inline">\(O\)</span>.<spanclass="math inline">\(AI\)</span>与<span class="math inline">\(\odotO\)</span>再次交于<span class="math inline">\(A_1\)</span>,<spanclass="math inline">\(A_2\)</span>是<spanclass="math inline">\(BC\)</span>中点,<spanclass="math inline">\(A_3\)</span>是<spanclass="math inline">\(\triangle AA_1A_2\)</span>外心,<spanclass="math inline">\(A_4\)</span>是<spanclass="math inline">\(IA_1\)</span>中点,<spanclass="math inline">\(A_5\)</span>是<spanclass="math inline">\(AI\)</span>中点,过<spanclass="math inline">\(A_5\)</span>且垂直于<spanclass="math inline">\(AI\)</span>的直线交过<spanclass="math inline">\(A_1\)</span>且垂直于<spanclass="math inline">\(A_3A_4\)</span>的直线于<spanclass="math inline">\(A_6\)</span>,<spanclass="math inline">\(I\)</span>在<spanclass="math inline">\(BC\)</span>上的射影是<spanclass="math inline">\(A_7\)</span>,<spanclass="math inline">\(A_7\)</span>关于<spanclass="math inline">\(A_2\)</span>的射影是<spanclass="math inline">\(A_8\)</span>,过<spanclass="math inline">\(A_8\)</span>作<spanclass="math inline">\(OA_6\)</span>的平行线<spanclass="math inline">\(l_a\)</span>.类似定义<spanclass="math inline">\(l_b,l_c\)</span>.证明:<spanclass="math inline">\(l_a,l_b,l_c\)</span>交于一点.</p><figure><img src="/img/fh1.png" srcset="/img/loading.gif" lazyload alt="图" /><figcaption aria-hidden="true">图</figcaption></figure>
-          </div>
-<div class="note note-primary">
-            <p><strong>评注</strong>把<em>上一道题的结论</em>和<em>下一道题的条件</em>拼在一起,你就得到了一道新题!</p>
-          </div>
-<h2 id="问题2">问题2</h2>
-<div class="note note-info">
-            <p><strong>题目</strong> 如图,<spanclass="math inline">\(M,N,P,Q,R,S\)</span>都是切点.过<spanclass="math inline">\(R,S\)</span>作<spanclass="math inline">\(BC\)</span>的垂线,交<spanclass="math inline">\(MN,PQ\)</span>于<spanclass="math inline">\(G_1,G_2\)</span>.若<spanclass="math inline">\(G_1,G_2\)</span>是<spanclass="math inline">\(\triangle ABC,BCD\)</span>的重心,证明:<spanclass="math inline">\(AP,DM\)</span>的交点在两圆的一条公切线上.</p><figure><img src="/img/fh2.png" srcset="/img/loading.gif" lazyload alt="图" /><figcaption aria-hidden="true">图</figcaption></figure>
-          </div>
-<div class="note note-primary">
-            <p><strong>评注</strong>把<em>上一道题的中间过程</em>和<em>下一道题的条件</em>拼在一起,你就得到了一道新题!</p>
-          </div>
-<div class="note note-danger">
-            <p><strong>警告</strong>由于乖猪的胡乱拼接,本题的条件和结论<strong>不是</strong>充要的.</p>
-          </div>
+                <h2 id="从geogebra到asymptote">从Geogebra到Asymptote</h2>
+<p><a
+target="_blank" rel="noopener" href="https://www.geogebra.org/">Geogebra</a>并非仅仅是一套免费的数学工具,
+它更是一个平台. 这个平台旨在连接满怀热情的教师与学生,
+为他们提供一种崭新的数学探索与学习方式.</p>
+<p>Geogebra
+Classic程序自带了转为Asymptote的工具.但是它生成的代码并不易于阅读.为此乖猪从<a
+target="_blank" rel="noopener" href="https://web.evanchen.cc/asyguide.html#geogebra">EvanChen的博客</a>找到了一个<a
+target="_blank" rel="noopener" href="https://github.com/vEnhance/dotfiles/blob/main/py-scripts/export-ggb-clean-asy.py">转换工具</a>,它可以把Geogebra生成的代码格式化.<strong>快说:谢谢Evan
+Chen</strong>.</p>
+<h2 id="挖坑asymptote的3d作图">（挖坑）Asymptote的3D作图</h2>
+<p><strong>以下内容由GPT5-mini撰写，真实性我不知道</strong></p>
+<p><del>快说：谢谢GPT5</del></p>
+<h3 id="asymptote-的-3d-绘图入门">Asymptote 的 3D 绘图入门</h3>
+<ul>
+<li><p>导入与投影</p>
+<ul>
+<li>在文件顶部引入 three 模块：<code>import three;</code></li>
+<li>设置投影：<code>currentprojection = perspective(3,2,1);</code> 或
+<code>currentprojection = orthographic();</code></li>
+</ul></li>
+<li><p>简单示例：坐标轴 + 球体 + 参数曲面 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs asy">import three;<br>size(350);<br>currentprojection = perspective(3,2,1);<br><br>triple O = (0,0,0);<br>triple ex = (1.6,0,0), ey = (0,1.6,0), ez = (0,0,1.6);<br><br>// 坐标轴<br>draw(O--ex, Arrow3);<br>draw(O--ey, Arrow3);<br>draw(O--ez, Arrow3);<br>label(&quot;$x$&quot;, ex, E); label(&quot;$y$&quot;, ey, N); label(&quot;$z$&quot;, ez, Z);<br><br>// 球体（半径1）<br>surface sph = sphere(O, 1);<br>material mat = material(diffusepen=orange+opacity(0.6));<br>draw(sph, surfacepen=mat);<br><br>// 参数化曲面：鞍面 z = x^2 - y^2<br>surface saddle = surface((real u, real v) =&gt; (u, v, u*u - v*v),<br>                                                 -1.2, 1.2, -1.2, 1.2, Spline);<br>draw(saddle, surfacepen=material(diffusepen=cyan+opacity(0.45)));<br></code></pre></td></tr></table></figure></p></li>
+<li><p>小技巧</p>
+<ul>
+<li>使用 <code>surfacepen=material(..., emissivepen=...)</code>
+能获得更好的光照效果。</li>
+<li>增加 <code>shipout</code> 或调整 <code>size()</code>
+控制输出分辨率与画布大小。</li>
+<li>若从 GeoGebra
+导出，先用格式化脚本清理再手动替换坐标与材质以便可读与美观。</li>
+</ul></li>
+</ul>
 
                 
               </div>
@@ -323,7 +334,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%95%B0%E5%AD%A6-%E7%AB%9E%E8%B5%9B-%E5%87%A0%E4%BD%95/" class="print-no-link">#数学,竞赛,几何</a>
+        <a href="/tags/Asymptote-%E6%8A%80%E6%9C%AF-TeX-%E7%BB%98%E5%9B%BE/" class="print-no-link">#Asymptote,技术,TeX,绘图</a>
       
     </div>
   
@@ -335,8 +346,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>乖猪的几何缝合怪题集</div>
-      <div>https://gooodpig.pages.dev/year/08/12/乖猪的几何缝合怪题集/</div>
+      <div>【干货】乖猪的Asymptote教程</div>
+      <div>https://gooodpig.pages.dev/year/08/16/【干货】乖猪的Asymptote教程/</div>
     </div>
     <div class="license-meta">
       
@@ -348,7 +359,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年8月12日</div>
+          <div>2025年8月16日</div>
         </div>
       
       
@@ -380,18 +391,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/year/08/16/%E3%80%90%E5%B9%B2%E8%B4%A7%E3%80%91%E4%B9%96%E7%8C%AA%E7%9A%84Asymptote%E6%95%99%E7%A8%8B/" title="【干货】乖猪的Asymptote教程">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">【干货】乖猪的Asymptote教程</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/year/08/11/%E3%80%90%E6%96%B0%E9%97%BB%E3%80%912025%E7%AC%AC%E4%B8%80%E5%B1%8AIMO%E8%AF%95%E9%A2%98%E5%8F%91%E5%B8%83/" title="【新闻】2025第一届IMO试题发布">
-                        <span class="hidden-mobile">【新闻】2025第一届IMO试题发布</span>
+                      <a href="/year/08/12/%E4%B9%96%E7%8C%AA%E7%9A%84%E5%87%A0%E4%BD%95%E7%BC%9D%E5%90%88%E6%80%AA%E9%A2%98%E9%9B%86/" title="乖猪的几何缝合怪题集">
+                        <span class="hidden-mobile">乖猪的几何缝合怪题集</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -414,7 +419,7 @@
         var options = Object.assign(
           {"clientID":"Ov23liYdmgzQZZ8wNotE","clientSecret":"4088dd598dc2d26b34ed9b29bcb3bdc6d721c39b","repo":"gooodpig.github.io","owner":"gooodpig","admin":["gooodpig"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://proxy-gitalk-api.netlify.app/github_access_token"},
           {
-            id: 'f80b6ef68e6817ec2fe842fefeebb27a'
+            id: 'e0a1eebe67be622d2ef6585a704de8a8'
           }
         )
         var gitalk = new Gitalk(options);
