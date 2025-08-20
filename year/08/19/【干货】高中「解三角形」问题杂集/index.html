@@ -19,24 +19,30 @@
   <meta name="author" content="GooodPig">
   <meta name="keywords" content="">
   
-    <meta name="description" content="从Geogebra到Asymptote Geogebra并非仅仅是一套免费的数学工具, 它更是一个平台. 这个平台旨在连接满怀热情的教师与学生, 为他们提供一种崭新的数学探索与学习方式. Geogebra Classic程序自带了转为Asymptote的工具.但是它生成的代码并不易于阅读.为此乖猪从EvanChen的博客找到了一个转换工具,它可以把Geogebra生成的代码格式化.快说:">
+    <meta name="description" content="叠甲 这个博客属于整活,致力于使用猎奇的辅助线或猎奇的恒等变形解决课内题.              警告 如果你有以下情况之一,请立刻离开:你的解三角形基础薄弱,本来就不会做;你对初中学的平面几何知识毫无了解;你不会配方法.                         好消息 如果你有以下情况,这份文档或许对你有帮助:你在找乐子;你不喜欢高中数学里形式化、模板化的解三">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【干货】乖猪的Asymptote教程">
-<meta property="og:url" content="https://gooodpig.pages.dev/year/08/16/%E3%80%90%E5%B9%B2%E8%B4%A7%E3%80%91%E4%B9%96%E7%8C%AA%E7%9A%84Asymptote%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:title" content="【干货】高中「解三角形」问题杂集">
+<meta property="og:url" content="https://gooodpig.pages.dev/year/08/19/%E3%80%90%E5%B9%B2%E8%B4%A7%E3%80%91%E9%AB%98%E4%B8%AD%E3%80%8C%E8%A7%A3%E4%B8%89%E8%A7%92%E5%BD%A2%E3%80%8D%E9%97%AE%E9%A2%98%E6%9D%82%E9%9B%86/index.html">
 <meta property="og:site_name" content="GooodPig">
-<meta property="og:description" content="从Geogebra到Asymptote Geogebra并非仅仅是一套免费的数学工具, 它更是一个平台. 这个平台旨在连接满怀热情的教师与学生, 为他们提供一种崭新的数学探索与学习方式. Geogebra Classic程序自带了转为Asymptote的工具.但是它生成的代码并不易于阅读.为此乖猪从EvanChen的博客找到了一个转换工具,它可以把Geogebra生成的代码格式化.快说:">
+<meta property="og:description" content="叠甲 这个博客属于整活,致力于使用猎奇的辅助线或猎奇的恒等变形解决课内题.              警告 如果你有以下情况之一,请立刻离开:你的解三角形基础薄弱,本来就不会做;你对初中学的平面几何知识毫无了解;你不会配方法.                         好消息 如果你有以下情况,这份文档或许对你有帮助:你在找乐子;你不喜欢高中数学里形式化、模板化的解三">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-08-16T04:02:53.000Z">
-<meta property="article:modified_time" content="2025-08-16T04:31:24.964Z">
+<meta property="og:image" content="https://gooodpig.pages.dev/img/s%E2%96%B3/p1lem.prf1.png">
+<meta property="og:image" content="https://gooodpig.pages.dev/img/s%E2%96%B3/p1lem.prf2.jpg">
+<meta property="article:published_time" content="2025-08-19T05:21:09.000Z">
+<meta property="article:modified_time" content="2025-08-20T02:43:58.120Z">
 <meta property="article:author" content="GooodPig">
-<meta property="article:tag" content="Asymptote,技术,TeX,绘图">
+<meta property="article:tag" content="高中">
+<meta property="article:tag" content="数学">
+<meta property="article:tag" content="解三角形">
+<meta property="article:tag" content="几何">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://gooodpig.pages.dev/img/s%E2%96%B3/p1lem.prf1.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>【干货】乖猪的Asymptote教程 - GooodPig</title>
+  <title>【干货】高中「解三角形」问题杂集 - GooodPig</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -214,7 +220,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="【干货】乖猪的Asymptote教程"></span>
+            <span id="subtitle" data-typed-text="【干货】高中「解三角形」问题杂集"></span>
           
         </div>
 
@@ -225,8 +231,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-08-16 12:02" pubdate>
-          2025年8月16日 中午
+        <time datetime="2025-08-19 13:21" pubdate>
+          2025年8月19日 下午
         </time>
       </span>
     
@@ -237,7 +243,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          482 字
+          382 字
         
       </span>
     
@@ -248,7 +254,7 @@
         
         
         
-          5 分钟
+          4 分钟
         
       </span>
     
@@ -285,46 +291,27 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">【干货】乖猪的Asymptote教程</h1>
+            <h1 id="seo-header">【干货】高中「解三角形」问题杂集</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="从geogebra到asymptote">从Geogebra到Asymptote</h2>
-<p><a
-target="_blank" rel="noopener" href="https://www.geogebra.org/">Geogebra</a>并非仅仅是一套免费的数学工具,
-它更是一个平台. 这个平台旨在连接满怀热情的教师与学生,
-为他们提供一种崭新的数学探索与学习方式.</p>
-<p>Geogebra
-Classic程序自带了转为Asymptote的工具.但是它生成的代码并不易于阅读.为此乖猪从<a
-target="_blank" rel="noopener" href="https://web.evanchen.cc/asyguide.html#geogebra">EvanChen的博客</a>找到了一个<a
-target="_blank" rel="noopener" href="https://github.com/vEnhance/dotfiles/blob/main/py-scripts/export-ggb-clean-asy.py">转换工具</a>,它可以把Geogebra生成的代码格式化.<strong>快说:谢谢Evan
-Chen</strong>.</p>
+                <h2 id="叠甲">叠甲</h2>
+<p>这个博客<strong>属于整活</strong>,致力于使用猎奇的<strong>辅助线</strong>或猎奇的<strong>恒等变形</strong>解决课内题.</p>
 <div class="note note-danger">
-            <p><strong>警告</strong> 1.这个Python脚本的原理是正则表达式,如果出bug了你可以改下ggb导出的源码. 2.有些情况下ggb导出的代码在绘制点的时候只有<code>label</code>而没有<code>dot</code>命令,这或许是因为你设置点的时候把点弄太小了,乖猪亲测是把网页版ggb的存档导入classic版的程序就可以导出了(.</p>
+            <p><strong>警告</strong> 如果你有以下情况之一,请立刻离开:</p><ol type="1"><li><p>你的解三角形基础薄弱,本来就不会做;</p></li><li><p>你对初中学的平面几何知识毫无了解;</p></li><li><p>你不会配方法.</p></li></ol>
           </div>
-<h2 id="挖坑asymptote的3d作图">（挖坑）Asymptote的3D作图</h2>
-<p><strong>以下内容由GPT5-mini撰写，真实性我不知道</strong></p>
-<p><del>快说：谢谢GPT5</del></p>
-<h3 id="asymptote-的-3d-绘图入门">Asymptote 的 3D 绘图入门</h3>
-<ul>
-<li><p>导入与投影</p>
-<ul>
-<li>在文件顶部引入 three 模块：<code>import three;</code></li>
-<li>设置投影：<code>currentprojection = perspective(3,2,1);</code> 或
-<code>currentprojection = orthographic();</code></li>
-</ul></li>
-<li><p>简单示例：坐标轴 + 球体 + 参数曲面 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs asy">import three;<br>size(350);<br>currentprojection = perspective(3,2,1);<br><br>triple O = (0,0,0);<br>triple ex = (1.6,0,0), ey = (0,1.6,0), ez = (0,0,1.6);<br><br>// 坐标轴<br>draw(O--ex, Arrow3);<br>draw(O--ey, Arrow3);<br>draw(O--ez, Arrow3);<br>label(&quot;$x$&quot;, ex, E); label(&quot;$y$&quot;, ey, N); label(&quot;$z$&quot;, ez, Z);<br><br>// 球体（半径1）<br>surface sph = sphere(O, 1);<br>material mat = material(diffusepen=orange+opacity(0.6));<br>draw(sph, surfacepen=mat);<br><br>// 参数化曲面：鞍面 z = x^2 - y^2<br>surface saddle = surface((real u, real v) =&gt; (u, v, u*u - v*v),<br>                                                 -1.2, 1.2, -1.2, 1.2, Spline);<br>draw(saddle, surfacepen=material(diffusepen=cyan+opacity(0.45)));<br></code></pre></td></tr></table></figure></p></li>
-<li><p>小技巧</p>
-<ul>
-<li>使用 <code>surfacepen=material(..., emissivepen=...)</code>
-能获得更好的光照效果。</li>
-<li>增加 <code>shipout</code> 或调整 <code>size()</code>
-控制输出分辨率与画布大小。</li>
-<li>若从 GeoGebra
-导出，先用格式化脚本清理再手动替换坐标与材质以便可读与美观。</li>
-</ul></li>
-</ul>
+<div class="note note-success">
+            <p><strong>好消息</strong> 如果你有以下情况,这份文档或许对你有帮助:</p><ol type="1"><li><p>你在找乐子;</p></li><li><p>你不喜欢高中数学里形式化、模板化的解三角形题目;</p></li><li><p>你想学一些平面几何知识在学校装x.</p></li></ol>
+          </div>
+<h2 id="第1题">第1题</h2>
+<div class="note note-info">
+            <p><strong>题目</strong> <span class="math inline">\(\triangleABC\)</span>,<span class="math inline">\(D\)</span>为<spanclass="math inline">\(BC\)</span>上靠近<spanclass="math inline">\(B\)</span>的三等分点,<spanclass="math inline">\(\angle DAB=2\angle DAC,AD=1\)</span>,求<spanclass="math inline">\(BC\)</span>的取值范围.</p>
+          </div>
+<p>为此,我们证明一个引理:</p>
+<div class="note note-primary">
+            <p><strong>Lem.</strong> 如图,<spanclass="math inline">\(A,B\)</span>是定点,<spanclass="math inline">\(P\)</span>是动点满足<spanclass="math inline">\(\angle PAB=2\angle PBA\)</span>,则<spanclass="math inline">\(P\)</span>的轨迹是双曲线的一支.</p><p><em>Prf1(利用双曲线的第一定义).</em> 如图,<spanclass="math inline">\(BE\)</span>是角平分线,<spanclass="math inline">\(\angle PBE=\angle EBA=\anglePAB\)</span>.由弦切角定理,<span class="math inline">\(\odotABE\)</span>与<spanclass="math inline">\(BP\)</span>相切.作另一条切线,切点是<spanclass="math inline">\(F\)</span>,与<spanclass="math inline">\(AB\)</span>交于<spanclass="math inline">\(C\)</span>.设<spanclass="math inline">\(G\)</span>是<spanclass="math inline">\(BF\)</span>中点.熟知四边形<spanclass="math inline">\(ABEF\)</span>是<atarget="_blank" rel="noopener" href="https://okazakiyumemi.github.io/blog/%E8%B0%83%E5%92%8C%E4%B8%93%E9%A2%98/#%E8%B0%83%E5%92%8C%E5%9B%9B%E8%BE%B9%E5%BD%A2">调和四边形</a>,<spanclass="math inline">\(\triangle EBG\sim\triangle EAF\)</span>.但<spanclass="math inline">\(AE=BE\Rightarrow AF=BG=\frac12BF\)</span>,而<spanclass="math inline">\(\triangle CAF\sim\triangleCFB\)</span>,计算比例可知<span class="math inline">\(AC=\frac13AB,CF=\frac23 AB\)</span>.于是<spanclass="math inline">\(C\)</span>也是定点,但<spanclass="math inline">\(PC-PB=PC-PF=CF=\frac23AB\)</span>,即<spanclass="math inline">\(P\)</span>的轨迹是双曲线的一支.<spanclass="math inline">\(\square\)</span></p><p><img src="/img/s△/p1lem.prf1.png" srcset="/img/loading.gif" lazyload alt="prf1" /><strong>Remark.</strong>想到这个做法时,乖猪还不知道圆锥曲线的第二定义.</p><p><em>Prf2(利用双曲线的第二定义).</em></p><p>不想敲了发个网图(</p><figure><img src="/img/s△/p1lem.prf2.jpg" srcset="/img/loading.gif" lazyload alt="prf2" /><figcaption aria-hidden="true">prf2</figcaption></figure>
+          </div>
 
                 
               </div>
@@ -337,7 +324,13 @@ Chen</strong>.</p>
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Asymptote-%E6%8A%80%E6%9C%AF-TeX-%E7%BB%98%E5%9B%BE/" class="print-no-link">#Asymptote,技术,TeX,绘图</a>
+        <a href="/tags/%E9%AB%98%E4%B8%AD/" class="print-no-link">#高中</a>
+      
+        <a href="/tags/%E6%95%B0%E5%AD%A6/" class="print-no-link">#数学</a>
+      
+        <a href="/tags/%E8%A7%A3%E4%B8%89%E8%A7%92%E5%BD%A2/" class="print-no-link">#解三角形</a>
+      
+        <a href="/tags/%E5%87%A0%E4%BD%95/" class="print-no-link">#几何</a>
       
     </div>
   
@@ -349,8 +342,8 @@ Chen</strong>.</p>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>【干货】乖猪的Asymptote教程</div>
-      <div>https://gooodpig.pages.dev/year/08/16/【干货】乖猪的Asymptote教程/</div>
+      <div>【干货】高中「解三角形」问题杂集</div>
+      <div>https://gooodpig.pages.dev/year/08/19/【干货】高中「解三角形」问题杂集/</div>
     </div>
     <div class="license-meta">
       
@@ -362,7 +355,7 @@ Chen</strong>.</p>
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年8月16日</div>
+          <div>2025年8月19日</div>
         </div>
       
       
@@ -394,18 +387,12 @@ Chen</strong>.</p>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/year/08/19/%E3%80%90%E5%B9%B2%E8%B4%A7%E3%80%91%E9%AB%98%E4%B8%AD%E3%80%8C%E8%A7%A3%E4%B8%89%E8%A7%92%E5%BD%A2%E3%80%8D%E9%97%AE%E9%A2%98%E6%9D%82%E9%9B%86/" title="【干货】高中「解三角形」问题杂集">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">【干货】高中「解三角形」问题杂集</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/year/08/12/%E4%B9%96%E7%8C%AA%E7%9A%84%E5%87%A0%E4%BD%95%E7%BC%9D%E5%90%88%E6%80%AA%E9%A2%98%E9%9B%86/" title="乖猪的几何缝合怪题集">
-                        <span class="hidden-mobile">乖猪的几何缝合怪题集</span>
+                      <a href="/year/08/16/%E3%80%90%E5%B9%B2%E8%B4%A7%E3%80%91%E4%B9%96%E7%8C%AA%E7%9A%84Asymptote%E6%95%99%E7%A8%8B/" title="【干货】乖猪的Asymptote教程">
+                        <span class="hidden-mobile">【干货】乖猪的Asymptote教程</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -428,7 +415,7 @@ Chen</strong>.</p>
         var options = Object.assign(
           {"clientID":"Ov23liYdmgzQZZ8wNotE","clientSecret":"4088dd598dc2d26b34ed9b29bcb3bdc6d721c39b","repo":"gooodpig.github.io","owner":"gooodpig","admin":["gooodpig"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://proxy-gitalk-api.netlify.app/github_access_token"},
           {
-            id: 'e0a1eebe67be622d2ef6585a704de8a8'
+            id: 'a831973da7d64ed30da829dc4ffac644'
           }
         )
         var gitalk = new Gitalk(options);
