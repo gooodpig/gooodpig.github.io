@@ -5,8 +5,8 @@
   
   <entry>
     <title>这道超难的竞赛不等式是可以是高考导数题?</title>
-    <link href="/year/03/29/%E8%BF%99%E9%81%93%E8%B6%85%E9%9A%BE%E7%9A%84%E7%AB%9E%E8%B5%9B%E4%B8%8D%E7%AD%89%E5%BC%8F%E6%98%AF%E5%8F%AF%E4%BB%A5%E6%98%AF%E9%AB%98%E8%80%83%E5%AF%BC%E6%95%B0%E9%A2%98/"/>
-    <url>/year/03/29/%E8%BF%99%E9%81%93%E8%B6%85%E9%9A%BE%E7%9A%84%E7%AB%9E%E8%B5%9B%E4%B8%8D%E7%AD%89%E5%BC%8F%E6%98%AF%E5%8F%AF%E4%BB%A5%E6%98%AF%E9%AB%98%E8%80%83%E5%AF%BC%E6%95%B0%E9%A2%98/</url>
+    <link href="/year/03/29/%E8%BF%99%E9%81%93%E8%B6%85%E9%9A%BE%E7%9A%84%E7%AB%9E%E8%B5%9B%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%8F%AF%E4%BB%A5%E6%98%AF%E9%AB%98%E8%80%83%E5%AF%BC%E6%95%B0%E9%A2%98/"/>
+    <url>/year/03/29/%E8%BF%99%E9%81%93%E8%B6%85%E9%9A%BE%E7%9A%84%E7%AB%9E%E8%B5%9B%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%8F%AF%E4%BB%A5%E6%98%AF%E9%AB%98%E8%80%83%E5%AF%BC%E6%95%B0%E9%A2%98/</url>
     
     <content type="html"><![CDATA[<p>不少人认为2024年的北京数学邀请赛(szm上二试模拟11)P2非常困难.然而此题使用高中课内的思维其实可以轻易做出.</p><p><strong>题1.</strong> 设实数 <span class="math inline">\(x_1, x_2,\cdots, x_{2024} \geq 1\)</span>，满足 <span class="math display">\[x_1 + x_2 + \cdots + x_{2024} = X + 2024, \quad x_1^2 + x_2^2 + \cdots +x_{2024}^2 = Y.\]</span> 求证：<span class="math inline">\(x_1x_2 \cdots x_{2024} \geq2024^{2024(X/Y)^2}\)</span>.</p><p><strong>分析.</strong> 那当然要取对数了,取完不难想到要对<spanclass="math inline">\(\ln x\)</span>作放缩.先想着用Taylor,<spanclass="math inline">\(\ln x\ge -\dfrac 12x^2+2x-\dfrac32(x\ge1)\)</span>,求和得到 <span class="math display">\[\begin{align*}\mathrm{LHS}&amp;\ge\exp\left(\sum_{k=1}^{2024}\left(-\dfrac 12x_k^2+2x_k-\dfrac32\right)\right)\\&amp;=\exp(-\frac12Y+2X+1012)\not\ge\mathrm{RHS}.\end{align*}\]</span> 我们完蛋了,这不够紧凑.为什么????因为Taylor展开尽管在<spanclass="math inline">\(1\)</span>处很精确,它在稍微远一点的地方却是非常松的,但题目右边是<spanclass="math inline">\((X/Y)^2\)</span>级别的东西,当然放不出来.</p><p>那就考虑一下Pade逼近,<span class="math inline">\(\lnx\ge\dfrac{2x-2}{x+1}(x\ge1)\)</span>,求和得 <spanclass="math display">\[\begin{align*}\mathrm{LHS}\ge&amp;\exp\left(\sum_{k=1}^{2024}\left(\dfrac{2x_k-2}{x_k+1}\right)\right)\\\overset{\text{Cauchy不等式}}{\ge}&amp;\exp\left(\dfrac{2X^2}{Y-2024}\right).\end{align*}\]</span> 这个看着就很有希望.只需证明 <span class="math display">\[\frac{2X^2}{Y-2024}\ge2024\ln2024\frac {X^2}{Y^2}\]</span></p><p><span class="math display">\[\Leftrightarrow f(Y):=Y^2-1012\ln2024 Y+1012\times2024\ln2024\ge0.\]</span></p><p>看,我们消了<span class="math inline">\(X\)</span>耶!</p><p>现在只要证</p><p><spanclass="math inline">\(\Delta_{f(Y)}=(1012\ln2024)^2-4\times1012\times2024\ln2024\le0\)</span></p><p><span class="math inline">\(\Leftrightarrow\ln2024\le8\Leftrightarrow \mathrm{e}^8\ge2024.\)</span></p><p>我们知道<spanclass="math inline">\(\mathrm{e}^8=(\mathrm{e}^2)^4&gt;7^4&gt;45^2&gt;2024,\)</span>即证<spanclass="math inline">\(\square\)</span></p><p>这题这么松,真要证明却还是有难度的.</p><p>好了,这题加个引导就可以是高考题了(逃):</p><p><strong>题1A.</strong> <span class="math inline">\(f(x)=(1+x)\lnx-ax+2\)</span>.</p><ol type="1"><li>讨论<span class="math inline">\(f(x)\)</span>的单调性.</li></ol><p>(2)设实数 <span class="math inline">\(x_1, x_2, \cdots, x_{2024} \geq1\)</span>，满足 <span class="math display">\[x_1 + x_2 + \cdots + x_{2024} = X + 2024, \quad x_1^2 + x_2^2 + \cdots +x_{2024}^2 = Y.\]</span> 求证：<span class="math inline">\(x_1x_2 \cdots x_{2024} \geq2024^{2024(X/Y)^2}\)</span>.</p>]]></content>
     
@@ -144,9 +144,9 @@
       
       <tag>数学</tag>
       
-      <tag>竞赛</tag>
-      
       <tag>几何</tag>
+      
+      <tag>竞赛</tag>
       
     </tags>
     
@@ -190,9 +190,9 @@
       
       <tag>数学</tag>
       
-      <tag>竞赛</tag>
-      
       <tag>几何</tag>
+      
+      <tag>竞赛</tag>
       
     </tags>
     
