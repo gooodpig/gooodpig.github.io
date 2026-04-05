@@ -4,7 +4,49 @@
   
   
   <entry>
-    <title>这道超难的竞赛不等式是可以是高考导数题?</title>
+    <title>这个高考模拟题考了阶？2025佛山一模19题</title>
+    <link href="/year/04/05/%E8%BF%99%E4%B8%AA%E9%AB%98%E8%80%83%E6%A8%A1%E6%8B%9F%E9%A2%98%E8%80%83%E4%BA%86%E9%98%B6%EF%BC%9F2025%E4%BD%9B%E5%B1%B1%E4%B8%80%E6%A8%A119%E9%A2%98/"/>
+    <url>/year/04/05/%E8%BF%99%E4%B8%AA%E9%AB%98%E8%80%83%E6%A8%A1%E6%8B%9F%E9%A2%98%E8%80%83%E4%BA%86%E9%98%B6%EF%BC%9F2025%E4%BD%9B%E5%B1%B1%E4%B8%80%E6%A8%A119%E9%A2%98/</url>
+    
+    <content type="html"><![CDATA[<p>前几天晚上同学问我一个问题:<spanclass="math inline">\(\renewcommand{\le}{\leqslant}\renewcommand{\ge}{\geqslant}\)</span></p><blockquote><p><strong>题(2025佛山一模).</strong> 将 <spanclass="math inline">\(2N\)</span> 项数列 <spanclass="math inline">\((a_1, a_2, \cdots, a_N, b_1, b_2, \cdots,b_N)\)</span> 重新排序为 <span class="math inline">\((b_1, a_1, b_2,a_2, \cdots, b_N, a_N)\)</span> 的操作称为一次“洗牌”,即排序后的新数列以<span class="math inline">\(b_i\)</span> 为首项,将 <spanclass="math inline">\(a_i\)</span> 排在 <spanclass="math inline">\(b_i\)</span> 之后,将 <spanclass="math inline">\(b_{i+1}\)</span> 排在 <spanclass="math inline">\(a_i\)</span> 之后.对于数列 <spanclass="math inline">\((1, 2, \cdots,2N)\)</span>,将“洗牌”后得到的新数列中数字 <spanclass="math inline">\(k\)</span> 的位置定义为 <spanclass="math inline">\(f(k)\)</span>. (3) 当 <spanclass="math inline">\(N=2^{n-1}\)</span>（其中 <spanclass="math inline">\(n \in \mathbb{N}^*\)</span>）时,数列 <spanclass="math inline">\((1, 2, \cdots, 2N)\)</span>经过若干次“洗牌”后能否还原为 <span class="math inline">\((1, 2, \cdots,2N)\)</span>？如果能,请说明至少需要多少次“洗牌”；如果不能,请说明理由.</p></blockquote><p><del>有趣的是, 我那天晚上把题听错了,反正也能做.</del></p><p>我们先普及一下阶的基本常识(本题仅是非常浅显的应用), 因为都很简单,有兴趣的同学可以自己证明这两个性质.</p><p><strong>定义.</strong> 对于 <span class="math inline">\(a\in\mathbbZ,m\in\mathbb N_+\)</span> 且 <span class="math inline">\(\gcd(a,m)=1\)</span>，满足同余式 <span class="math inline">\(a^n \equiv 1 \pmodm\)</span> 的最小正整数 <span class="math inline">\(n\)</span> 称作<strong><span class="math inline">\(a\)</span> 模 <spanclass="math inline">\(m\)</span> 的阶</strong>，记作 <spanclass="math inline">\(\operatorname{ord}_m(a)\)</span>．</p><p><strong>性质1.</strong> <spanclass="math inline">\(r=\operatorname{ord}_m(a)\)</span>, 那么 <spanclass="math inline">\(a^0,a^1,\dots,a^{r-1}\)</span> 模 <spanclass="math inline">\(m\)</span> 两两不同余.</p><p><strong>性质2.</strong> <span class="math inline">\(a^n\equiv1\pmodm\Leftrightarrow\operatorname{ord}_m(a)\mid n.\)</span></p><p>从这些性质可以发现, 阶具有很好的性质,有兴趣的同学还可以找更多资料来看.</p><hr /><p>然后就可以做题了.</p><p><strong>分析与解.</strong> 容易写出 <spanclass="math inline">\(f(k)=\begin{cases}2k,1\le k\le N,\\2k-2N-1,N+1\lek \le 2N.\end{cases}\)</span> 这启发我们直接模 <spanclass="math inline">\(2N+1\)</span>. <spanclass="math display">\[f(k)\equiv 2k\pmod{2N+1}\Rightarrowf^{(m)}(k)\equiv2^mk\pmod{2N+1}.\]</span></p><p>考虑必要性,如果要若干次(记为 <span class="math inline">\(T\)</span>次)洗牌后还原, <span class="math inline">\(2^Tk\equivk\pmod{2N+1}\)</span> 对<span class="math inline">\(1\le k \le2N\)</span> 成立. 我们想要取”最好的” <spanclass="math inline">\(k\)</span>, 使得这件事”最难成立”. 什么时候最难呢?显然是 <span class="math inline">\(k\)</span> 和 <spanclass="math inline">\(2N+1\)</span> 互素的时候, 这时 <spanclass="math inline">\(2^T\equiv 1\pmod{2N+1}\)</span>. 所以<spanclass="math inline">\(\operatorname{ord}_{2N+1}(2)\mid T\)</span>, 则<span class="math inline">\(T\)</span> 至少是 <spanclass="math inline">\(\operatorname{ord}_{2N+1}(2)\)</span>. 考虑充分性,取 <span class="math inline">\(T=\operatorname{ord}_{2N+1}(2)\)</span>,则 <span class="math inline">\(f^{(T)}(k)\equiv k\pmod{2N+1}\)</span>,因为 <span class="math inline">\(1 \le f^{(T)}(k)\le 2N\)</span>, 所以<span class="math inline">\(f^{(T)}(k)=k\)</span>,也就是说所有牌都已经回到了原来的位置, 充分性成立.</p><p>对于<span class="math inline">\(N=2^{n-1}\)</span>, 容易得到 <spanclass="math inline">\(\operatorname{ord}_{2^n+1}(2)=2n\)</span>,所以答案就是 <span class="math inline">\(\boxed{2n}\)</span>.</p><p>拿着阶, 我们应该可以量产这种洗牌题.</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>数学</tag>
+      
+      <tag>高考数学</tag>
+      
+      <tag>数论</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>【新闻】2026第二届IMO试题（全银河假面愚者入院试测）试卷发布</title>
+    <link href="/year/04/01/%E3%80%90%E6%96%B0%E9%97%BB%E3%80%912026%E7%AC%AC%E4%BA%8C%E5%B1%8AIMO%E8%AF%95%E9%A2%98%EF%BC%88%E5%85%A8%E9%93%B6%E6%B2%B3%E5%81%87%E9%9D%A2%E6%84%9A%E8%80%85%E5%85%A5%E9%99%A2%E8%AF%95%E6%B5%8B%EF%BC%89%E8%AF%95%E5%8D%B7%E5%8F%91%E5%B8%83/"/>
+    <url>/year/04/01/%E3%80%90%E6%96%B0%E9%97%BB%E3%80%912026%E7%AC%AC%E4%BA%8C%E5%B1%8AIMO%E8%AF%95%E9%A2%98%EF%BC%88%E5%85%A8%E9%93%B6%E6%B2%B3%E5%81%87%E9%9D%A2%E6%84%9A%E8%80%85%E5%85%A5%E9%99%A2%E8%AF%95%E6%B5%8B%EF%BC%89%E8%AF%95%E5%8D%B7%E5%8F%91%E5%B8%83/</url>
+    
+    <content type="html"><![CDATA[<iframe src="/全银河假面愚者入院试测.pdf" width="100%" height="800px" style="border: 0;"></iframe><iframe src="/高考数学模拟预测卷（去除模因版）.pdf" width="100%" height="800px" style="border: 0;"></iframe>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>数学,竞赛</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>d:&#92;公众号&#92;chebyshev&#92;这个高考模拟题考了阶？2025佛山一模19题.md</title>
     <link href="/year/03/29/%E8%BF%99%E9%81%93%E8%B6%85%E9%9A%BE%E7%9A%84%E7%AB%9E%E8%B5%9B%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%8F%AF%E4%BB%A5%E6%98%AF%E9%AB%98%E8%80%83%E5%AF%BC%E6%95%B0%E9%A2%98/"/>
     <url>/year/03/29/%E8%BF%99%E9%81%93%E8%B6%85%E9%9A%BE%E7%9A%84%E7%AB%9E%E8%B5%9B%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%8F%AF%E4%BB%A5%E6%98%AF%E9%AB%98%E8%80%83%E5%AF%BC%E6%95%B0%E9%A2%98/</url>
     
@@ -60,9 +102,9 @@
     
     <tags>
       
-      <tag>数学</tag>
-      
       <tag>高中</tag>
+      
+      <tag>数学</tag>
       
       <tag>解三角形</tag>
       
